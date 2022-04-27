@@ -46,5 +46,35 @@ Fake and Real SHA1 Fingerprint key:
 
 
 
+Algorithm:
+
+
+           public static String generateSha1Key() {
+		 Random random = new Random();
+		var keys = "0123456789abcdef"; //Random keys
+		var digits = "0123456789"; // Digits chars
+		var sha1_key = ""; // Sha key
+		var keyLength = 59; // length of key
+	
+		var count=0;
+		for(int i=0; i<keyLength;i++) {
+			if(count == 2) { // Every 2 count add ':' this char on key
+ 				sha1_key = sha1_key + ":";
+				count=0;
+			}
+			else {
+				count++;
+				if(i==0 || i == 1 || i== keyLength-1 || i== keyLength-2) // If the first chars and last chars add random digits
+				    sha1_key = sha1_key + digits.charAt(random.nextInt(digits.length()));
+				else
+					sha1_key = sha1_key + keys.charAt(random.nextInt(keys.length())); // Otherwise add random other chars
+				
+			}
+			
+			
+		}
+		   return sha1_key;
+		
+	        }
 
 
