@@ -10,17 +10,17 @@ public class Sha1Key {
 		var keys = "0123456789abcdef";
 		var digits = "0123456789";
 		var sha1_key = "";
-		var exampleKey = "";
+		var keyLength = 59;
 	
 		var count=0;
-		for(int i=0; i<exampleKey.length();i++) {
+		for(int i=0; i<keyLength;i++) {
 			if(count == 2) {
 				sha1_key = sha1_key + ":";
 				count=0;
 			}
 			else {
 				count++;
-				if(i==0 || i == 1 || i== exampleKey.length()-1 || i== exampleKey.length()-2)
+				if(i==0 || i == 1 || i== keyLength-1 || i== keyLength-2)
 				    sha1_key = sha1_key + digits.charAt(random.nextInt(digits.length()));
 				else
 					sha1_key = sha1_key + keys.charAt(random.nextInt(keys.length()));
