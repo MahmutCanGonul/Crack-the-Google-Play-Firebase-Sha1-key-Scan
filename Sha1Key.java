@@ -10,7 +10,7 @@ public class Sha1Key {
 		var keys = "0123456789abcdef";
 		var digits = "0123456789";
 		var sha1_key = "";
-		var exampleKey = "61:d2:48:c7:13:53:c3:bd:58:5f:c0:09:06:c1:1d:eb:e2:be:3d:77";
+		var exampleKey = "";
 	
 		var count=0;
 		for(int i=0; i<exampleKey.length();i++) {
