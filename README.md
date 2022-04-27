@@ -37,11 +37,6 @@ After that result like this:
 ![fakeFingerPrint](https://user-images.githubusercontent.com/75094927/165592375-dd1a26dd-3985-4096-a53e-c19eee598e51.png)
 
 
-Fake and Real SHA1 Fingerprint key:
-
-
-
-![fakeFingerPrint2](https://user-images.githubusercontent.com/75094927/165592468-948d9ae5-f923-4f0e-80c8-48ad164381fb.png)
 
 
 
